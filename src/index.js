@@ -2,12 +2,9 @@ exports.reverseNumber = function (num) {
     const reverse = Array.from(String(num)).reverse().join("");
     return Number(reverse);
 }
-
 exports.organizeLetters = function (letter) {
     return Array.from(letter).sort().join("");
 }
-
-
 exports.primeNumber = function (pnumber) {
     for (let i = 2; i < pnumber; i++) {
         if (pnumber % i == 0) {
@@ -16,7 +13,6 @@ exports.primeNumber = function (pnumber) {
     }
     return pnumber >= 2;
 }
-
 exports.uniqueChar = function (letter) {
     letter = Array.from(letter);
     let result = [];
@@ -26,16 +22,13 @@ exports.uniqueChar = function (letter) {
     }
     return result.join("");
 }
-
 exports.second = function (num) {
     if (num.length < 2) {
         return undefined;
     }
-
     num = num.sort();
     return [num[1], num.at(-2)];
 }
-
 exports.sort = function (num) {
     for (let end = num.length - 1; end > 0; end--) {
         for (let i = 0; i < end; i++) {
@@ -48,7 +41,6 @@ exports.sort = function (num) {
     }
     return num;
 }
-
 exports.callBack = function (keng) {
     return keng();
 }
